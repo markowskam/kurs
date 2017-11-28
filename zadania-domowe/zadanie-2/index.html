@@ -5,6 +5,38 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Zadanie2</p>
+    <p>Zadanie2</p> <br />
+    
+    <form action="https://formspree.io/monika.nesteruk@gmail.com" method="post">
+       
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="imie"><br />
+        <label for="last-name">Nazwisko:</label>
+        <input type="text" id="last-name" name="nazwisko"><br />
+        <label for="mail">e-mail:</label>
+        <input type="email" id="mail" name="mail"><br />
+        <label for="phone">tel:</label>
+        <input type="tel" id="phone" name="telefon"><br />
+        
+        Miasto: <select name="miasto">
+                    <option value="Krakow">Kraków</option>
+                    <option value="Warszawa">Warszawa</option>
+                    <option value="Gdansk">Gdańsk</option>
+                </select><br />
+        
+        Płeć:<input type="radio" name="plec" value="Kobieta">Kobieta
+        <input type="radio" name="plec" value="Mezczyzna">Mężczyzna<br />
+        
+        Zgoda na dane osobowe:<input type="checkbox"  name="zgoda">Tak
+        <input type="checkbox" name="zgoda">Nie<br />
+        
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="wiadomosc" maxlength="500" cols="20" rows="10">
+        </textarea><br />
+        
+        <input type="submit" value="Wyślij">
+        
+    </form>
+    
 </body>
 </html>
