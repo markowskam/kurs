@@ -18,17 +18,24 @@
         <label for="phone">tel:</label>
         <input type="tel" id="phone" name="telefon"><br />
         
-        Miasto: <select name="miasto">
+        <label for="city">Miasto:</label>      
+        <select id='city'name="miasto">
                     <option value="Krakow">Kraków</option>
                     <option value="Warszawa">Warszawa</option>
                     <option value="Gdansk">Gdańsk</option>
-                </select><br />
+        </select><br />
         
-        Płeć:<input type="radio" name="plec" value="Kobieta">Kobieta
-        <input type="radio" name="plec" value="Mezczyzna">Mężczyzna<br />
+        <label>Płeć</label>
+        <label for="genderF">Kobieta</label>
+        <input type="radio" id="genederF" name="plec" value="Kobieta">
+        <label for="genderM">Mężczyzna</label>
+        <input type="radio" id="genderM" name="plec" value="Mezczyzna"><br />
         
-        Zgoda na dane osobowe:<input type="checkbox"  name="zgoda">Tak
-        <input type="checkbox" name="zgoda">Nie<br />
+        <label>Zgoda na dane osobowe:</label>
+        <label for="agreementY"></label>
+        <input type="checkbox"  name="zgoda" id="agreementY">Tak
+        <label for="agreementN"></label>
+        <input type="checkbox" name="zgoda" id="agreementN">Nie<br />
         
         <label for="message">Wiadomość:</label>
         <textarea id="message" name="wiadomosc" maxlength="500" cols="20" rows="10">
