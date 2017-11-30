@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie-dodatkowe-1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form id="form" action="https://formspree.io/monika.nesteruk@gmail.com" method="post" autocomplete="on">
+
+         <h1>A Simple Form</h1>
+         <h3>Form Fundamentals</h3>
+
+           <fieldset id="customer">
+               <legend class="legenda">Customer Info</legend>
+               <label for="name">Name:</label>
+               <input type="text" name="imie" id="name" placeholder="Enter your name" autofocus required><br /><br />
+               <label for="phone">Telephone:</label>
+               <input type="tel" name="telefon" id="phone" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br /><br />
+               <label for="e-mail">Email address:</label>
+               <input type="email" name="mail" id="e-mail" placeholder="Enter your e-mail address" multiple required>
+              
+
+           </fieldset>
+
+            <fieldset  id="literature">
+               <legend class="legenda">Books</legend>
+                    <label for="books"></label>
+                    <select name="ksiązki" id="books">
+                        <option value="Pozycja 1">Harry Potter part 1</option>
+                        <option value="Pozycja 2">Harry Potter part 2</option>
+                        <option value="Pozycja 3">Harry Potter part 3</option>
+                        <option value="Pozycja 4">Harry Potter part 4</option>
+                        <option value="Pozycja 5">Harry Potter part 5</option>
+                    </select>
+                    
+                    <label for="number">Quantity (Maximum 5):</label>
+                    <input type="number" name="liczba" id="number" min="1" max="5">
+           </fieldset><br />
+           
+           <label for="button"></label>
+           <input type="submit" name="guzik" id="button" value="Submit">
+
+    </form>
+</body>
+</html>
