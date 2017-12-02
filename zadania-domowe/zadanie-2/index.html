@@ -3,45 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <p>Zadanie2</p> <br />
+
     
     <form action="https://formspree.io/monika.nesteruk@gmail.com" method="post">
        
-        <label for="name">Imię:</label>
+        <label for="name">Imię:</label><br />
         <input type="text" id="name" name="imie"><br />
-        <label for="last-name">Nazwisko:</label>
+        <label for="last-name">Nazwisko:</label><br />
         <input type="text" id="last-name" name="nazwisko"><br />
-        <label for="mail">e-mail:</label>
+        <label for="mail">e-mail:</label><br />
         <input type="email" id="mail" name="mail"><br />
-        <label for="phone">tel:</label>
-        <input type="tel" id="phone" name="telefon"><br />
+        <label for="phone">tel:</label><br />
+        <input type="tel" id="phone" name="telefon"><br /><br />
         
-        <label for="city">Miasto:</label>      
+        <label for="city">Miasto:</label><br />     
         <select id='city'name="miasto">
                     <option value="Krakow">Kraków</option>
                     <option value="Warszawa">Warszawa</option>
                     <option value="Gdansk">Gdańsk</option>
-        </select><br />
+        </select><br /><br />
         
-        <label>Płeć</label>
-        <label for="genderF">Kobieta</label>
+        <label>Wybierz płeć:</label><br />
+        
         <input type="radio" id="genderF" name="plec" value="Kobieta">
-        <label for="genderM">Mężczyzna</label>
-        <input type="radio" id="genderM" name="plec" value="Mezczyzna"><br />
+        <label for="genderF">Kobieta</label><br />
+        
+        <input type="radio" id="genderM" name="plec" value="Mezczyzna">
+        <label for="genderM">Mężczyzna</label><br /><br />
+        
+        
+        
+        <label for="message">Wiadomość:</label><br />
+        <textarea id="message" name="wiadomosc" maxlength="500" cols="20" rows="10">
+        </textarea><br />
         
         <label>Zgoda na dane osobowe:</label>
         <label for="agreementY">Tak</label>
         <input type="checkbox"  name="zgoda" id="agreementY">
         <label for="agreementN">Nie</label>
-        <input type="checkbox" name="zgoda" id="agreementN"><br />
+        <input type="checkbox" name="zgoda" id="agreementN"><br /><br />
         
-        <label for="message">Wiadomość:</label>
-        <textarea id="message" name="wiadomosc" maxlength="500" cols="20" rows="10">
-        </textarea><br />
-        
-        <input type="submit" value="Wyślij">
+        <input type="submit" value="Send">
         
     </form>
     

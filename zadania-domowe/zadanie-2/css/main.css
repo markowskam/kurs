@@ -1,0 +1,36 @@
+body {
+    background-color: #213b50 ;
+}
+
+label {
+    color:#ffffff;
+    
+}
+input, textarea, select {
+    background-color: #2b4a64 ;
+    border:0px;
+    color:#ffffff;
+   
+    
+}
+input:focus, textarea:focus {
+    background-color: #4e708c ;
+    border-color:#ffffff;
+    color:#ffffff ;
+    
+}
+
+input[type="submit"] {
+    background-color: lime;
+    border:0px;
+    color:white;
+    text-transform: uppercase;
+    height:40px;
+    width:80px;
+    font-weight:bold;
+   
+}
+
+select {
+   width:162px;
+}
