@@ -97,3 +97,26 @@ span.nagloweczek {
     font-weight: bold;
 }
 
+section.sekcja.umiejetnosci p {
+    text-align: center;
+}
+
+section.sekcja.umiejetnosci {
+    position:relative;
+   
+}
+
+section.sekcja.umiejetnosci div.ikona {
+    display: inline-block;
+    margin-right:70px;
+    
+}
+
+section.sekcja.umiejetnosci div.ikony {
+    text-align: center;
+    margin-top:50px;
+} 
+
+section.sekcja.umiejetnosci div.ikona img {
+    margin-bottom: 20px;
+}
