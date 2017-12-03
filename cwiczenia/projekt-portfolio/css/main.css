@@ -1,0 +1,43 @@
+* {
+box-sizing:border-box;
+
+}
+
+
+body {
+    margin:0px;
+    padding:0px;
+    font-family: Lato;
+    
+}
+
+#header {
+    position:relative;
+    background-image: url('../img/header-background.jpg');
+    background-size: cover;
+    height:800px;
+    
+}
+
+.item {
+    position:absolute;
+    color:white;
+    display:inline-block;
+    top:50px;
+    right:0px;
+    width:100px;
+    
+}
+
+.item.about-me  {
+    margin-right: 300px;
+}
+
+.item.skills {
+    margin-right: 200px;
+}
+
+
+.item.portfolio {
+    margin-right: 100px;
+}
