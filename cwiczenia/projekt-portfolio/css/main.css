@@ -5,11 +5,19 @@
 }
 
 body {
-    margin:0px;
     font-family: 'Lato', sans-serif;
 }
 
-.naglowki {
+#header {
+    position:relative;
+    background-image: url('../img/header-background.jpg');
+    background-size: cover;
+    height:600px;
+    color:white;
+    
+}
+
+#header div.naglowki {
     position:absolute;
     font-family: 'Roboto', sans-serif; 
     margin-left: auto;
@@ -21,35 +29,71 @@ body {
 }
 
 
-h1 {
-    font-size:100px;
+#header div.naglowki h1 {
+    font-size:120px;
+    font-weight:100;
 }
 
-#nazwisko {
+#header div.naglowki h3 {
+    margin-left:150px;
+    font-size:40px;
+    font-weight: 100;
+}
+
+div.naglowki #nazwisko {
     color:#1ac056;
-}
-#header {
-    position:relative;
-    background-image: url('../img/header-background.jpg');
-    background-size: cover;
-    height:600px;
-    color:white;
-    
+    font-weight:400;
 }
 
-#menu-poziome {
+#header #menu #menu-poziome {
     position:absolute;
     top:25px;
     right:0px;
+    position: fixed;
     
 }
 
-.item {
+#header #menu-poziome li.item {
     display:inline-block;
     margin-right: 20px;
 }
 
-.item a {
+#header #menu-poziome li.item a {
     text-decoration: none;
     color:white;
 }
+
+.sekcja {
+    height:400px;
+    color:#291f1a;
+}
+
+section.sekcja.o-mnie {
+    position:relative;
+   
+}
+
+section.sekcja.o-mnie img {
+    position:absolute;
+    width:20%;
+    left:15%;
+}
+
+section.sekcja.o-mnie p {
+    margin:30px;
+    margin-left:50%;
+}
+
+section.sekcja.o-mnie h2, section.sekcja.umiejetnosci h2, section.sekcja.portfolio h2 {
+    
+    font-size:30px;
+    text-align: center;
+    margin:50px;
+    font-weight: 100;
+}
+
+span.nagloweczek {
+    color:#1ac056;
+    font-weight: bold;
+}
+
