@@ -1,7 +1,7 @@
 * {
     box-sizing:border-box;
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
 }
 
 body {
@@ -18,14 +18,8 @@ body {
 }
 
 #header div.naglowki {
-    position:absolute;
-    font-family: 'Roboto', sans-serif; 
-    margin-left: auto;
-    margin-right: auto;
-    top:250px;
-    width:50%;
-    left:0px;
-    right:0px;
+ text-align:center;
+ padding-top: 200px;
 }
 
 
@@ -64,8 +58,9 @@ div.naglowki #nazwisko {
 }
 
 .sekcja {
-    height:400px;
+    height:500px;
     color:#291f1a;
+    background-color: #f9fcfe;
 }
 
 section.sekcja.o-mnie {
@@ -91,6 +86,13 @@ section.sekcja.o-mnie h2, section.sekcja.umiejetnosci h2, section.sekcja.portfol
     margin:50px;
     font-weight: 100;
 }
+
+hr {
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+   
 
 span.nagloweczek {
     color:#1ac056;
@@ -119,4 +121,50 @@ section.sekcja.umiejetnosci div.ikony {
 
 section.sekcja.umiejetnosci div.ikona img {
     margin-bottom: 20px;
+}
+
+div.zdjecia div.kontener {
+    width:33,3333%;
+    display:inline-block;
+    height:350px;
+}
+
+div.kontener.portfolio1 {
+    background-image: url('../img/portfolio1.jpg')
+} 
+
+div.kontener.portfolio2 {
+    background-image: url('../img/portfolio2.jpg')
+} 
+
+div.kontener.portfolio3 {
+    background-image: url('../img/portfolio4.jpg')
+}
+
+
+footer {
+    background-color:  #213b50;
+    height: 400px;
+    position:relative;
+}
+
+footer div.kolumna {
+    width:50%;
+    display: inline-block;
+    height:100%;
+}
+
+footer div.kolumna.prawa {
+    position:absolute;
+    left:50%;
+}
+
+div.kolumna.prawa input:not(.button), div.kolumna.prawa textarea {
+    margin:20px;
+    width:95%;
+    background-color: #446f91;;
+}
+
+div.kolumna.prawa input.button {
+    
 }
