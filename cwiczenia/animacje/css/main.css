@@ -1,0 +1,41 @@
+
+div.kwadrat {
+    width:150px;
+    height:150px;
+    border:1px;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:auto;
+    margin-right:auto;
+   
+}
+
+div.kwadrat.czerwony {
+    background-color: red;
+     transition: width 2s ease 0.5s;
+}
+
+div.kwadrat.niebieski {
+    background-color: blue;
+    transition: height 2s ease 0.5s;
+}
+
+div.kwadrat.zielony {
+    background-color: green;
+    transition: width 2s ease 0.5s, height 2s ease 0.5s, background-color 2s ease 0.5s;
+}
+
+div.kwadrat.czerwony:hover {
+    width:300px;
+}
+
+div.kwadrat.niebieski:hover {
+    height:300px;  
+}
+
+div.kwadrat.zielony:hover {
+    width:300px;
+    height:300px;
+    background-color:pink;
+   
+}

@@ -1,0 +1,36 @@
+a:link {
+    color:orange;
+    text-decoration: none;
+}
+
+a:visited {
+    color:red;
+}
+
+#paragraf1 {
+    color:blue;
+}
+
+#paragraf1:target {
+    color:green;
+}
+
+#paragraf1:target::before {
+    content:"przed "
+
+}
+
+div.wiersz {
+    width:100%;
+    height:20px;
+}
+div:nth-child(2n) {
+    background-color:bisque;
+}
+
+div:nth-child(2n+1) {
+    background-color:pink;
+}
+div:nth-child(4), div:nth-child(9), div:nth-child(14) {
+    background-color: green;
+}

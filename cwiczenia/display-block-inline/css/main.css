@@ -1,0 +1,23 @@
+
+
+#paragraf1, #paragraf3 {
+    background-color: skyblue;
+}
+
+#paragraf2, #paragraf4 {
+    background-color: red;
+}
+
+#paragraf3, #paragraf4 {
+    display:inline;
+    
+}
+div#kwadraty .kwadrat {
+    width:80px;
+    height:80px;
+    background-color:rgb(240, 186, 86);
+    display:inline-block;
+    border-color:orangered;
+    border:3px;
+    margin-top:20px;
+}

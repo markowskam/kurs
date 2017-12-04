@@ -1,0 +1,96 @@
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+#menu {
+    
+    background-color: black;
+    
+}
+
+#menu ul {
+    
+    margin:0px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px; 
+    
+}
+
+#menu li a {
+    
+    color:white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-family: "Lato";
+
+}
+
+#menu li.menu-item {
+    text-align: center;
+    display: inline-block;
+}
+
+#header h1 {
+    position:absolute;
+    font-weight:600px;
+    text-transform: uppercase;
+    top:50%;
+    left:0;
+    right:0;
+    color:white;
+    font-family: "Lato";
+   
+}
+
+#about h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 200%;
+}
+
+#header {
+    position:relative;
+    text-align:center;
+    
+}
+
+
+#header img {
+    width:100%;
+    
+}
+
+#about {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-family: 'Lato';
+    padding:20px;
+    
+}
+
+#about .about-content {
+    
+    margin-bottom:20px;
+    font-family:"Lato";
+}
+
+#contact h3 {
+    font-size: 150%;
+}
+
+#contact a {
+    color:white;
+    
+}
+
+#contact #contact-content {
+    font-size: 80%;
+}

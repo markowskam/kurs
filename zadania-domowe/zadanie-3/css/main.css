@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+}
+
+#rysunek {
+    position:relative;
+    width:453px;
+    height:453px;
+    background-color: white;
+    margin:3px;
+   
+}
+#rysunek div.kolumna div.kwadrat {
+    width:146px;
+    height:146px; 
+    position:relative;
+    margin-bottom: 3px;
+}
+
+
+#rysunek #kolumny div.kolumna {
+    width:146px;
+    height:444px;
+    display: inline-block;
+    
+}
+#rysunek #kolumny {
+    position:absolute;
+    left:3px;
+    top:3px;
+}
+
+#rysunek div.kolumna div.kwadrat div.kolko {
+    width:70px;
+    height:70px;
+    border-style:solid;
+    border-width: 1px;
+    border-radius:50px;
+    position: absolute;
+    left:38px;
+    top:38px;
+}
+
+
+.czerwony {
+    background-color: red;
+}
+
+.zolty {
+    background-color: yellow;
+}
+.fioletowy {
+    background-color: blueviolet;
+}
+.niebieski {
+    background-color: blue;
+}
+.czarny {
+    background-color: black;
+}
+.szary {
+    background-color: gray;
+}
+.zielony {
+    background-color: green;
+}
+.pomaranczowy {
+    background-color: orange;
+}
+.rozowy {
+    background-color: pink;
+}
