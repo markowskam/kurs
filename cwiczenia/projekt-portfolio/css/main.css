@@ -119,10 +119,6 @@ section.sekcja.umiejetnosci p {
     text-align: center;
 }
 
-section.sekcja.umiejetnosci {
-    position:relative;
-   
-}
 
 section.sekcja.umiejetnosci div.ikona {
     display: inline-block;
@@ -138,11 +134,18 @@ section.sekcja.umiejetnosci div.ikony {
 section.sekcja.umiejetnosci div.ikona img {
     margin-bottom: 20px;
 }
+div.zdjecia {
+    font-size:0px;
+}
 
 div.zdjecia div.kontener {
-    width:33,3333%;
+    position:relative;
+    width:33.3333%;
     display:inline-block;
     height:350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 div.kontener.portfolio1 {
