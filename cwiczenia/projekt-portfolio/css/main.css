@@ -11,6 +11,7 @@ body {
 #header {
     background-image: url('../img/header-background.jpg');
     background-size: cover;
+    background-position: center;
     height:600px;
     color:white;
     
@@ -57,40 +58,55 @@ div.naglowki #nazwisko {
     color:#1ac056;
 }
 
-.sekcja {
-    height:500px;
+#header #menu-poziome li.item a:hover {
     color:#291f1a;
-    background-color: #f9fcfe;
 }
 
-section.sekcja.o-mnie {
-    position:relative;
+
+.sekcja {
+    padding:0px 80px 100px;
+    width:100%;
+    color:#291f1a;
+    background-color: #f9fcfe;
+    height:500px;
+}
+
+
+section.sekcja.o-mnie article {
+    width:50%;
+    float:left;
    
 }
 
-section.sekcja.o-mnie img {
-    position:absolute;
-    width:20%;
-    left:15%;
+section.sekcja.o-mnie figure img {
+    height:350px;
+    border:15px solid white;
+    border-radius: 14px 14px 14px 14px;
 }
 
-section.sekcja.o-mnie p {
-    margin:30px;
-    margin-left:50%;
+section.sekcja.o-mnie figure {
+    margin:0px;
+    width:50%;
+    float:left;  
+    text-align: center;
 }
+
+
 
 section.sekcja.o-mnie h2, section.sekcja.umiejetnosci h2, section.sekcja.portfolio h2 {
     
     font-size:30px;
     text-align: center;
-    margin:50px;
-    font-weight: 100;
+    margin-top:60px;
+    margin-bottom: 35px;
+    font-weight: 300;
 }
 
 hr {
     height: 10px;
 	border: 0;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+    width:100%;
 }
    
 
