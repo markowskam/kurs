@@ -220,7 +220,7 @@ div.kontener-content div.kontener-content-text > * {
 
 footer {
     background-color:  #213b50;
-    height: 400px;
+    height: 500px;
     position:relative;
 }
 
@@ -228,6 +228,55 @@ footer div.kolumna {
     width:50%;
     display: inline-block;
     height:100%;
+   
+}
+
+div.kolumna.lewa h3 {
+    font-size:38px;
+    margin:72px;
+    color:white;
+   
+}
+
+div.kolumna.lewa span {
+    color:#1ac056;
+    
+}
+
+div.kolumna.lewa div.adres {
+    
+    line-height: 25px;
+    margin:72px;
+    color:white;
+   
+}
+
+div.kolumna.lewa div.adres a {
+    color:#1ac056;
+    font-weight:100;
+}
+
+
+div.kolumna.lewa div.logo {
+    margin:72px;
+    
+}
+
+div.logo i.fa {
+    color:white;
+    margin-right: 30px;
+    width:38px;
+    height:38px;
+    border: 1px solid white;
+    text-align: center;
+    font-size:22px;
+    
+}
+
+div.logo a i.fa:hover {
+    color:#213b50;
+    background-color: white;
+    
 }
 
 footer div.kolumna.prawa {
