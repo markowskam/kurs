@@ -177,9 +177,44 @@ div.mask {
     
 }
 
-div.mask:hover {
+div.mask:hover, div.zdjecia div.kontener-content:hover, div.kontener-content div.kontener-content-text:hover {
     opacity:1;
 }
+
+div.zdjecia div.kontener-content {
+    border: 1px solid white;
+    margin:10px;
+    height:330px;
+    opacity:0;
+    transition: all 0.3s ease-in-out;
+    position:relative;
+}
+
+
+
+div.kontener-content div.kontener-content-text {
+    position: absolute;
+    font-size: initial; 
+    color:white;
+    opacity:0;
+    transition: all 0.3s ease-in-out;
+    height:100%;
+    padding:5px;
+/*
+    transform:translateY(-50%);
+    top:50%;
+*/
+    
+
+}
+
+
+/*
+div.kontener-content div.kontener-content-text > * {
+    
+   
+}
+*/
 
 
 
