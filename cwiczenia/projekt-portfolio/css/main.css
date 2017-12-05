@@ -141,6 +141,7 @@ section.sekcja.umiejetnosci div.ikona img {
 }
 div.zdjecia {
     font-size:0px;
+    text-align: center;
 }
 
 div.zdjecia div.kontener {
@@ -171,8 +172,16 @@ div.mask {
     background-color: rgba(42, 61, 79, 0.8);
     height:100%;
     width:100%;
+    opacity:0;
+    transition: all 0.3s ease-in-out;
     
 }
+
+div.mask:hover {
+    opacity:1;
+}
+
+
 
 footer {
     background-color:  #213b50;
