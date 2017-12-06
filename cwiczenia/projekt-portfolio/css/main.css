@@ -9,6 +9,8 @@ body {
     font-weight:300;
 }
 
+/*Nagłówek-start*/
+
 #header {
     background-image: url('../img/header-background.jpg');
     background-size: cover;
@@ -35,7 +37,7 @@ body {
     font-weight: 100;
 }
 
-div.naglowki #nazwisko {
+#header div.naglowki #nazwisko {
     color:#1ac056;
     font-weight:400;
 }
@@ -68,6 +70,9 @@ div.naglowki #nazwisko {
 }
 
 
+/*Nagłówek-stop*/
+
+
 .sekcja {
     padding:0px 80px 100px;
     width:100%;
@@ -76,6 +81,13 @@ div.naglowki #nazwisko {
     height:500px;
 }
 
+span.nagloweczek {
+    color:#1ac056;
+    font-weight: bold;
+}
+
+
+/*Sekcja O mnie-start*/
 
 section.sekcja.o-mnie article {
     width:50%;
@@ -96,8 +108,6 @@ section.sekcja.o-mnie figure {
     text-align: center;
 }
 
-
-
 section.sekcja.o-mnie h2, section.sekcja.umiejetnosci h2, section.sekcja.portfolio h2 {
     
     font-size:30px;
@@ -107,18 +117,17 @@ section.sekcja.o-mnie h2, section.sekcja.umiejetnosci h2, section.sekcja.portfol
     font-weight: 300;
 }
 
+/*Sekcja O mnie-stop*/
+
 hr {
     height: 10px;
 	border: 0;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
     width:100%;
 }
-   
 
-span.nagloweczek {
-    color:#1ac056;
-    font-weight: bold;
-}
+
+/*Sekcja Umiejętności-start*/
 
 section.sekcja.umiejetnosci p {
     text-align: center;
@@ -139,12 +148,17 @@ section.sekcja.umiejetnosci div.ikony {
 section.sekcja.umiejetnosci div.ikona img {
     margin-bottom: 20px;
 }
-div.zdjecia {
+
+/*Sekcja Umiejętności-stop*/
+
+/*Sekcja Portfolio-start*/
+
+section.sekcja.portfolio div.zdjecia {
     font-size:0px;
     text-align: center;
 }
 
-div.zdjecia div.kontener {
+section.sekcja.portfolio div.zdjecia div.kontener {
     position:relative;
     width:33.3333%;
     display:inline-block;
@@ -154,15 +168,15 @@ div.zdjecia div.kontener {
     background-size: cover;
 }
 
-div.kontener.portfolio1 {
+section.sekcja.portfolio div.zdjecia div.kontener.portfolio1 {
     background-image: url('../img/portfolio1.jpg')
 } 
 
-div.kontener.portfolio2 {
+section.sekcja.portfolio div.zdjecia div.kontener.portfolio2 {
     background-image: url('../img/portfolio2.jpg')
 } 
 
-div.kontener.portfolio3 {
+section.sekcja.portfolio div.zdjecia div.kontener.portfolio3 {
     background-image: url('../img/portfolio4.jpg')
 }
 
@@ -174,11 +188,14 @@ div.mask {
     width:100%;
     opacity:0;
     transition: all 0.3s ease-in-out;
-    
 }
 
 div.mask:hover, div.zdjecia div.kontener-content:hover, div.kontener-content div.kontener-content-text:hover {
     opacity:1;
+}
+
+div.kontener-content div.kontener-content-text i:hover {
+    color:#1ac056;
 }
 
 div.zdjecia div.kontener-content {
@@ -189,8 +206,6 @@ div.zdjecia div.kontener-content {
     transition: all 0.3s ease-in-out;
     position:relative;
 }
-
-
 
 div.kontener-content div.kontener-content-text {
     position: absolute;
@@ -203,20 +218,12 @@ div.kontener-content div.kontener-content-text {
 /*
     transform:translateY(-50%);
     top:50%;
-*/
-    
-
+*/   
 }
 
+/*Sekcja portfolio-stop*/
 
-/*
-div.kontener-content div.kontener-content-text > * {
-    
-   
-}
-*/
-
-
+/*Stopka-start*/
 
 footer {
     background-color:  #213b50;
@@ -228,22 +235,24 @@ footer div.kolumna {
     width:50%;
     display: inline-block;
     height:100%;
-   
+    font-family: 'Roboto', sans-serif;
 }
 
-div.kolumna.lewa h3 {
+footer div.kolumna.lewa h3 {
     font-size:38px;
     margin:72px;
     color:white;
+    font-weight:100;   
    
 }
 
-div.kolumna.lewa span {
+footer div.kolumna.lewa span {
     color:#1ac056;
+    font-weight:400;
     
 }
 
-div.kolumna.lewa div.adres {
+footer div.kolumna.lewa div.adres {
     
     line-height: 25px;
     margin:72px;
@@ -251,18 +260,18 @@ div.kolumna.lewa div.adres {
    
 }
 
-div.kolumna.lewa div.adres a {
+footer div.kolumna.lewa div.adres a {
     color:#1ac056;
     font-weight:100;
 }
 
 
-div.kolumna.lewa div.logo {
+footer div.kolumna.lewa div.logo {
     margin:72px;
     
 }
 
-div.logo i.fa {
+footer div.kolumna.lewa div.logo i.fa {
     color:white;
     margin-right: 30px;
     width:38px;
@@ -273,7 +282,7 @@ div.logo i.fa {
     
 }
 
-div.logo a i.fa:hover {
+footer div.kolumna.lewa div.logo a i.fa:hover {
     color:#213b50;
     background-color: white;
     
@@ -281,15 +290,16 @@ div.logo a i.fa:hover {
 
 footer div.kolumna.prawa {
     position:absolute;
+    
 }
 
-div.kolumna.prawa form {
+footer div.kolumna.prawa form {
     width:100%;
     height:100%;
     padding-top:80px;
 }
 
-div.kolumna.prawa input:not(.button), div.kolumna.prawa textarea {
+footer div.kolumna.prawa input:not(.button), footer div.kolumna.prawa textarea {
     padding:15px;
     width:90%;
     margin-bottom:15px;
@@ -298,20 +308,35 @@ div.kolumna.prawa input:not(.button), div.kolumna.prawa textarea {
     border:0px;
 }
 
-div.kolumna.prawa input:not(.button):focus, div.kolumna.prawa textarea:focus {
+footer div.kolumna.prawa input:not(.button):focus, footer div.kolumna.prawa textarea:focus {
     background-color: #426684;
 }
 
-div.kolumna.prawa input.button {
+footer div.kolumna.prawa input.button {
     padding:15px 30px;
     text-transform:uppercase;
     border:1px solid ;
     background-color: #1ac056;
     color:white;
     font-weight:600;
+    float:right;
+    margin-right: 94px;
 }
 
-div.kolumna.prawa input.button:hover {
+footer div.kolumna.prawa input.button:hover {
     color:#1ac056;
     background-color: white;
+}
+
+/*Stopka-stop*/
+/*Copyright*/
+
+div#copyright {
+    background-color: #142634 ;
+    padding:0px 80px;
+    color:white;
+}
+
+div#copyright p {
+    margin:0px;
 }
