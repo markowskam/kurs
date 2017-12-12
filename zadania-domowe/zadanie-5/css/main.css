@@ -1,26 +1,27 @@
 * {
-    margin:0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
 #container {
-    height:100vh;
-    width:100%;
-/*    position:relative;*/
+    height: 100vh;
+    width: 100%;
+    position: relative;
     background-color: currentColor;
 
 }
 
 .item {
     
-    position:absolute;
-    height:200px;
-    width:200px;
-    color:white;
-    font-size:150px;
-    line-height:200px;
-    visibility:hidden;
-    animation-name:odliczanie;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    color: white;
+    font-size: 150px;
+    line-height: 200px;
+    visibility: hidden;
+    animation-name: odliczanie;
+    animation-duration: 1s;
     text-align: center;
 /*
     margin-right: auto;
@@ -29,81 +30,68 @@
     
 }
 
-.item.text {
-    position:absolute;
-    height:200px;
-    width:200px;
+.text {
+    position: absolute;
+    height: 200px;
+    width: 200px;
     color: white;
     text-align: center;
-    line-height:200px;
+    line-height: 200px;
     animation-delay: 10s;
-    animation-duration:1s;
-    font-size:20px;
+    animation-duration: 1s;
+    font-size: 20px;
 }
 
 
 @keyframes odliczanie {
     0% {
-        visibility:visible;
+        visibility: visible;
     }
     99%, 100% {
-        visibility:hidden;
+        visibility: hidden;
     }
 }
 
-.item.number1 {
+.number1 {
     animation-delay: 0s;
-    animation-duration:1s;
 }
 
 
-.item.number2 {
+.number2 {
     animation-delay: 1s;
-    animation-duration:1s;
 }
 
-.item.number3 {
+.number3 {
     animation-delay: 2s;
-    animation-duration:1s;
 }
 
-.item.number4 {
+.number4 {
     animation-delay: 3s;
-    animation-duration:1s;
 }
 
-.item.number5 {
+.number5 {
     animation-delay: 4s;
-    animation-duration:1s;
 }
 
-.item.number6 {
+.number6 {
     animation-delay: 5s;
-    animation-duration:1s;
 }
 
-.item.number7 {
+.number7 {
     animation-delay: 6s;
-    animation-duration:1s;
 }
 
-.item.number8 {
+.number8 {
     animation-delay: 7s;
-    animation-duration:1s;
 }
 
-.item.number9 {
+.number9 {
     animation-delay: 8s;
-    animation-duration:1s;
 }
 
-.item.number10 {
+.number10 {
     animation-delay: 9s;
-    animation-duration:1s;
 }
 
-.item.text {
-    animation-delay: 10s;
-    animation-iteration-count: infinite;
-}
+
 
