@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+   
+}
+
+#container {
+    height: 200px;
+    width: 400px;
+    background-color: red;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+
+}
+
+h1 {
+	font-size: 40px;
+    color:white;
+    text-transform: uppercase;
+    height: 100px;
+    transform: translate(0,50%);
+    line-height: 100px;     
+}
+
+.mask {
+    height: 100px;
+    width: 200px;
+    background:linear-gradient(to right, rgba(255,255,255, 0), rgba(255,0,0,0.7),rgba(255,0,0,0.7), rgba(255,255,255, 0));
+    animation-name:animacja;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 50px;
+}
+
+
+@keyframes animacja {
+    0% {
+        transform:translate(0,0);
+    }
+    
+   
+    
+    100% {
+        transform:translate(100%,0)
+    }
+}
+
