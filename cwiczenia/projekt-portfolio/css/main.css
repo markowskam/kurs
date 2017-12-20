@@ -215,10 +215,14 @@ div.kontener-content div.kontener-content-text {
     transition: all 0.3s ease-in-out;
     height:100%;
     padding:5px;
-/*
-    transform:translateY(-50%);
-    top:50%;
-*/   
+    
+/*  transform:translateY(0,-50%);
+    top:50%;*/
+  
+}
+
+div.kontener-content div.kontener-content-text i {
+    font-size:200%;
 }
 
 /*Sekcja portfolio-stop*/
