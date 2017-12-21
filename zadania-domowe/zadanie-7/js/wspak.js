@@ -1,24 +1,23 @@
 'use strict';
 
+var napis = "Paragraf"
 
-function zamianaWspak() {
-    var napis = document.getElementsByTagName('p')[0].innerText;
+function zamianaWspak(napis) {
     var napisJakoTablica = napis.split(""); //zamiana string na array
     var napisWspak = napisJakoTablica.reverse();
     napisWspak = napisWspak.join("");
-    console.log(napisWspak)
+    return napisWspak;
     
 }
+ console.log(zamianaWspak(napis));
 
-zamianaWspak()
+ var wyraz = "Akademia108"
 
-function zamiana() {
-    var wyraz = document.getElementsByTagName('p')[1].innerText;
+function zamiana(wyraz) {
     var wyrazJakoTablica = wyraz.split(""); //zamiana string na array
     var wyrazWspak = wyrazJakoTablica.reverse();
     wyrazWspak = wyrazWspak.join("");
     console.log(wyrazWspak)
     
 }
-
-zamiana()
+zamiana(wyraz);
