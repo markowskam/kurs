@@ -1,22 +1,23 @@
+var napis = "paragraf"
 
-function sortowanie() {
-    var napis = document.getElementsByTagName('p')[0].innerText;
+function sortowanie(napis) {
     var napisJakoTablica = napis.split(""); //zamiana string na array
     var napisSortowany = napisJakoTablica.sort();
     napisSortowany = napisSortowany.join("");
-    console.log(napisSortowany)
+    return napisSortowany;
     
 }
 
-sortowanie()
+console.log(sortowanie(napis));
 
-function poSortowanie() {
-    var wyraz = document.getElementsByTagName('p')[1].innerText;
+var wyraz = "Akademia108"
+
+function poSortowanie(wyraz) {
     var wyrazJakoTablica = wyraz.split(""); //zamiana string na array
     var wyrazPoSortowanie = wyrazJakoTablica.sort();
     wyrazPoSortowanie = wyrazPoSortowanie.join("");
-    console.log(wyrazPoSortowanie)
+    return wyrazPoSortowanie;
     
 }
 
-poSortowanie()
+console.log(poSortowanie(wyraz));
