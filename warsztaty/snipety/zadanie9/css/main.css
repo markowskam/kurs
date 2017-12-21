@@ -1,0 +1,25 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height:100%;
+    position:relative;
+    font-size:120%;
+    
+}
+
+footer {
+    height:300px;
+    width:100%;
+    bottom:0px;
+    background-color: aqua;
+    position:absolute;
+    position: fixed;
+    
+}
+section {
+    margin-bottom:350px;
+}

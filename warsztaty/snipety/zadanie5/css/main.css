@@ -1,0 +1,9 @@
+ul {
+    list-style-type: none;
+}
+
+li::before {
+    content: "\f2b6";
+    font-family: FontAwesome;
+    margin:5px;
+}

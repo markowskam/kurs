@@ -1,0 +1,29 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+section.parallax1, section.parallax2{
+    height:800px;
+}
+section.content1, section.content2 {
+    height:300px;
+    text-align: center;
+    margin-top:30px;
+}
+
+.parallax1 {
+    background-image: url(../pictures/konie1.jfif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.parallax2 {
+    background-image: url(../pictures/bazant.jfif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}

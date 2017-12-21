@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body, html {
+  
+    background-color: #98fb98;
+    height:100vh;
+}
+
+#contener {
+    width:100%;
+    font-size:0px;
+    padding-top:400px;
+    height:400px;
+ 
+}
+
+
+#contener > div {
+    display: inline-block; 
+}
+
+
+div.product {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    width:25%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+
+div.product.one {
+    background-image: url(../product-1.jpg);
+}
+
+div.product.two {
+    background-image: url(../product-2.jpg);
+   
+}
+
+div.product.three {
+    background-image: url(../product-3.jpg);
+   
+}
+
+div.product.four {
+    background-image: url(../product-4.jpg);
+   
+}
+
+
+.mask {
+    height: inherit;
+    background-color: rgba(255, 111, 0, 0.5);
+    opacity:0;
+    position:relative;
+    transition:opacity 1s ease 0s;
+    text-align: center;
+    
+}
+
+.mask i {
+    position:absolute;
+    width:50px;
+    height:50px;
+    font-size:100px;
+    transform: translate(0,150px);
+    
+}
+
+.mask:hover {
+    opacity:1;
+    
+}

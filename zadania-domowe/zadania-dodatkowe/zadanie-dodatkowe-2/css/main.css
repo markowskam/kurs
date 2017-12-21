@@ -1,0 +1,45 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+figure {
+    width:666px;
+    height:366px;
+    position:relative;
+    font-size:0px;
+  
+}
+
+div#border-top, div#border-bottom {
+    height:50%;
+}
+
+div#border-bottom {
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    opacity:0;
+    transition: height 6s ease 1s;
+}
+
+div#border-top {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    opacity:0;
+    transition: height 6s ease 1s;
+}
+
+img {
+    position:absolute;
+    top:8px;
+    left:8px;
+}
+
+figure div#border-top:hover, figure div#border-bottom:hover {
+    opacity:1;
+   
+    
+}

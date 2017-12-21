@@ -1,0 +1,59 @@
+
+
+q, blockquote {
+    quotes: "\201C" "\201D";
+}
+
+q:lang(en), blockquote:lang(en) 
+
+{
+    quotes: "*" "*";
+}
+
+q:before, blockquote:before 
+
+{
+    content:open-quote;
+
+}
+
+q:after, blockquote:after {
+    content: close-quote;
+}
+
+
+
+/*
+Inny sposób
+
+q, blockquote {
+    quotes: "\201C" "\201D";
+}
+
+
+q[lang*='en'], blockquote[lang*='en']
+{
+    quotes: "*" "*";
+}
+
+
+q[lang*='en']:before, blockquote[lang*='en']:before
+{
+    content:open-quote;
+
+}
+
+q[lang*='en']:after, blockquote[lang*='en']:after {
+    content: close-quote;
+}
+
+q:before, blockquote:before 
+
+{
+    content:open-quote;
+
+}
+
+q:after, blockquote:after {
+    content: close-quote;
+}*/

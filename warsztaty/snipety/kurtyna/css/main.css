@@ -1,0 +1,66 @@
+
+
+.kontener {
+    width:100%;
+    height:100vh;
+    background-image: url(../../../../cwiczenia/animacje-2/hello_kitty.jpg);
+    background-size: cover;
+}
+
+.kurtyna {
+    height:50vh;
+}
+
+
+
+.kurtyna.gorna {
+    background-image: url(../../../../cwiczenia/animacje-2/hello_kitty.jpg);
+    background-size: contain;
+    animation-name: w-dol;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    
+   
+}
+
+.kurtyna.dolna {
+    background-color: blueviolet;
+    animation-name: w-gore;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    
+    
+}
+
+@keyframes w-dol {
+    0% {
+        transform:translate(0,-100%);
+
+        
+    }
+    
+
+/*
+    100% {
+          top:50vh;
+
+    }
+*/
+ }
+
+
+@keyframes w-gore {
+       0% {
+        transform:translate(0,100%);
+        
+    }
+    
+
+/*
+    100% {
+           bottom:50vh;
+    }
+*/
+}
+
+

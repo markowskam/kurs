@@ -1,0 +1,27 @@
+p {
+    font-size:30px;
+}
+
+i {
+    color:red;
+    animation-name:bicie;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    margin:20px;
+}
+
+
+
+@keyframes bicie {
+    
+    
+    50%
+    {
+        transform: scale(1.5);
+    }
+    
+    100%
+    {
+        transform:scale(2.5);
+    }
+}
