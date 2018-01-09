@@ -1,5 +1,5 @@
-var napis = "paragraf"
-var wyraz = "Akademia108"
+var napis = "paragraf";
+var wyraz = "Akademia108";
 
 function sortowanie(parametrPierwszy) {
     var napisJakoTablica = parametrPierwszy.split(""); //zamiana string na array

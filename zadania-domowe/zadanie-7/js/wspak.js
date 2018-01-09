@@ -1,7 +1,7 @@
 'use strict';
 
-var napis = "Paragraf"
-var wyraz = "Akademia108"
+var napis = "Paragraf";
+var wyraz = "Akademia108";
 
 function zamianaWspak(parametrPierwszy) {
     var napisJakoTablica = parametrPierwszy.split(""); //zamiana string na array

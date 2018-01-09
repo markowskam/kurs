@@ -1,0 +1,59 @@
+* {
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body {
+    margin-left: 50px;
+    margin-top:50px;
+}
+
+#calculator {
+    background-color: orange;
+    width: 370px;
+    height: 470px;
+    padding: 20px;
+    
+}
+
+button {
+    background-color: dimgray;
+    border: 0px;
+    padding: 0px;
+    margin: 5px;
+    color: white;
+    font-size: 160%;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    box-shadow: -1px 10px 5px -2px rgba(0,0,0,0.75);
+}
+
+
+button.double {
+    width: 135px;
+    
+}
+
+input {
+    width: 280px;
+    height: 60px;
+    margin-top: 10px;
+    color: white;
+    border: 0px;
+    margin: 5px;
+    background-color: dimgray;
+    font-size: 160%;
+}
+
+button.number, button.dot {
+    background-color: black;
+}
+
+button.delete {
+    background-color: skyblue;
+}
+
+button.equal {
+    background-color: forestgreen;
+}

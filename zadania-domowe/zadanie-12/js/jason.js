@@ -12,8 +12,8 @@ var jsonPracownicy = {
 console.log(jsonPracownicy);
 
 jsonPracownicy.pracownicy.forEach(function(element, index) {
-    console.log(index);
-    console.log(element.firstName);
-    console.log(element.lastName);
-    
+    console.log("Pracownik o indeksie " + index + " to " + element.firstName + " " + element.lastName + ".");
+//    console.log(element.firstName);
+//    console.log(element.lastName);
+//    
 });

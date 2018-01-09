@@ -3,52 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Zadanie-15</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
    <div id="calculator">
-       <div id="screen">   
-       </div>
-       <div class="operators">
-             <div class="double delete">
-                 
-             </div>  
-             <div class="percentage">
-                 
-             </div>
-             <div class="addition">
-                 
-             </div>
-       </div>
-       <div id="numbers"> 
-          <div class="first_row">
-               <div class="number1">7</div>
-               <div class="number2">8</div>
-               <div class="number3">9</div>
-          </div>
-           <div class="second_row">
-               <div class="number4">4</div>
-               <div class="number5">5</div>
-               <div class="number6">6</div>
-           </div>
-           <div class="third_row">
-                <div class="number7">1</div>
-                <div class="number8">2</div>
-                <div class="number9">3</div>
-           </div>
-           <div class="fourth_row">
-               <div class="double zero">0</div>
-               <div class="dot">.</div>
-           </div>  
-       </div>
-       <div class="operators">
-           <div class="subtraction">-</div>
-           <div class="multiplication">x</div>
-           <div class="division">/</div>
-           <div class="equal">=</div>
-       </div>
-   </div>
-   
-   
+       <input type="text" id="screen" /> 
+       <button onclick="process('del')" class="delete double">Del</button>
+       <button onclick="process('%')" class="operator percentage">%</button>
+       <button onclick="process('+')" class="operator addition">+</button>
+       <button onclick="process('7')" class="number">7</button>
+       <button onclick="process('8')" class="number">8</button>
+       <button onclick="process('9')" class="number">9</button>
+       <button onclick="process('-')"class="operator subtraction">-</button>
+       <button onclick="process('4')" class="number">4</button>
+       <button onclick="process('5')" class="number">5</button>
+       <button onclick="process('6')" class="number">6</button>
+       <button onclick="process('*')" class="operator multiplication">x</button>
+       <button onclick="process('1')" class="number">1</button>
+       <button onclick="process('2')" class="number">2</button>
+       <button onclick="process('3')" class="number">3</button>
+       <button onclick="process('/')" class="division">/</button>
+       <button onclick="process('0')" class="number double">0</button>
+       <button onclick="process('.')" class="operator dot">.</button>
+       <button onclick="process('=')" class="operator equal">=</button>
+       
+   </div>    
    
    
     <script src = 'js/kalkulator.js'></script>

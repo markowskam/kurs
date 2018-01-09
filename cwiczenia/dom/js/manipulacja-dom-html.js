@@ -33,6 +33,6 @@ console.log(p.outerHTML);
 var link = document.getElementsByClassName('link')[0];
 
 link.href = 'http://google.pl';
-link.className += 'nowa klasa'; //link.className = link.className + 'nowa-klas';
+link.className += 'nowa klasa'; //link.className = link.className + 'nowa-klas'; skleja dwa strongi!!!
 
-mainHeader.style.color = '#11aa22';
+//mainHeader.style.color = '#11aa22';

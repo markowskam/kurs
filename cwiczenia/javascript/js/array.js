@@ -10,16 +10,17 @@ imiona[2] = 'Wojtek';
 console.log(imiona);
 
 imiona.push('Miłosz');
-
+//
 console.log(imiona.push());
-
+////
 console.log(imiona);
 //
-//var ostatniElement = imiona.pop();
-//console.log(ostatniElement);
+var ostatniElement = imiona.pop();
+console.log(ostatniElement);
 //
-//imiona.unshift('Robert');
-//console.log(imiona);
+
+imiona.unshift('Robert');
+console.log(imiona);
 
 console.log(imiona.unshift('Robert'));
 

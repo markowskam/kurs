@@ -1,7 +1,7 @@
 'use strict';
 
 
- var tablica = [0, 1, 2, 3, 4, 5];
+ var liczby = [0, 1, 2, 3, 4, 5];
 
 function sumowanieKwadratowLiczb(tablica) {
     
@@ -14,4 +14,4 @@ function sumowanieKwadratowLiczb(tablica) {
    return sumaKwadratow;
 }
 
-console.log(sumowanieKwadratowLiczb(tablica));
+console.log(sumowanieKwadratowLiczb(liczby));

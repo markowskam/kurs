@@ -10,7 +10,7 @@ var sumaKasy = iloscOsoba1 + iloscOsoba2 + iloscOsoba3;
 console.log('W głównym programie suma kasy ' + sumaKasy);
 
 function policzSumeKasy(iloscOsoba1,iloscOsoba2,iloscOsoba3) {
-//    sumaKasy = 500;
+//sumaKasy = 500;
     var suma = iloscOsoba1 + iloscOsoba2 + iloscOsoba3;
     
     var sumaKasy = iloscOsoba1 + iloscOsoba2;
@@ -21,5 +21,7 @@ function policzSumeKasy(iloscOsoba1,iloscOsoba2,iloscOsoba3) {
 }
 //policzSumeKasy(0,0,0);
 console.log(policzSumeKasy(10,20,30));
-console.log(suma);
+//console.log(suma);
 console.log('W glownym programie po wykonaniu funkcji suma kasy: ' + sumaKasy);
+
+
