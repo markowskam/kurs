@@ -1,13 +1,13 @@
 
-@media (min-width:992px) { 
-    #contener > div { 
-        width:25vw } }
+@media (max-width:480px) { 
+    .product { 
+        width: 100vw } }
 
 @media (min-width:480px) and (max-width:992px) { 
-     #contener > div {  
-         width:50vw } }
+     .product {  
+         width: 50vw } }
 
-@media (max-width:480px) { 
-    #contener > div {  
-        width:100vw } }
+@media (min-width:992px) { 
+    .product {  
+        width: 25vw } }
     
