@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#kwadrat {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+#przycisk {
+    height: 70px;
+    width: 70px;
+    z-index: 1000;
+}
