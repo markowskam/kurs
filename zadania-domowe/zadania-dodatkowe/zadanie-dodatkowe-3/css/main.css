@@ -27,12 +27,13 @@ body, html {
 
 
 div.product {
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 /*    width: 25%;*/
     height: 400px;
 /*    padding: 0 2%;*/
+/*    margin-right: 5px;*/
 }
 
 
@@ -70,8 +71,8 @@ div.product.four {
     font-size: 100px;
     position: absolute;
     top: 50%;
-/*    transform: translateY(-50%);*/
-    transform: translateX(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: white;
     
 }
