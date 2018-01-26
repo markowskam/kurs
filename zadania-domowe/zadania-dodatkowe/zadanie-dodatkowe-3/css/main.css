@@ -18,6 +18,7 @@ body, html {
     top: 50%;
     transform: translateY(-50%);
     height: 400px;
+    text-align: center;
 }
 
 
@@ -30,10 +31,9 @@ div.product {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-/*    width: 25%;*/
+    width: 22%;
     height: 400px;
-/*    padding: 0 2%;*/
-/*    margin-right: 5px;*/
+    margin: 0 1%;
 }
 
 
