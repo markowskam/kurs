@@ -8,7 +8,7 @@ figure {
     margin:20px;
     position:relative;
     height: 368px;
-/*    overflow:hidden;*/
+    overflow:hidden;
 }
 
 img {
@@ -35,19 +35,20 @@ img {
     border-right: 3px solid black;
     position: absolute;
     top: 185px;
-    
-    
+    transform: translateY(100%);
+    transition: transform 5s ease;
 }
+
 
 figure:hover #border-top {
    height:188px;
 }
 
 figure:hover #border-bottom {
-    
+    transform: translateY(0%);
 }
 
-p {
+.img-caption p {
     position: absolute;
     z-index: 100;
     font-size: 50px;
@@ -56,45 +57,14 @@ p {
     color: white;
     text-transform: uppercase;
     background-color: black;
-    opacity: 0.5;
-    
-    
-    
+    opacity: 0;   
+    width: 650px;
+    left: 8px;
+    text-align: center;
+    transition: all 5s ease;
 }
 
-
-
-
-
-/*
-div#border-top, div#border-bottom {
-    height:50%;
+figure:hover .img-caption p {
+    font-size: 100px;
+    opacity: 0.7;
 }
-
-div#border-bottom {
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    opacity:0;
-    transition: height 6s ease 1s;
-}
-
-div#border-top {
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    opacity:0;
-    transition: height 6s ease 1s;
-}
-
-img {
-    position:absolute;
-    top:8px;
-    left:8px;
-}
-
-figure div#border-top:hover, figure div#border-bottom:hover {
-    opacity:1;
-   
-    
-}*/
