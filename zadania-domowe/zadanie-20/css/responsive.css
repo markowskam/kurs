@@ -1,0 +1,19 @@
+@media (max-width: 576px) { 
+    footer div.col-md-6 #contact-details, footer div.logo i.fa { 
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        margin:5px auto;
+    } 
+    
+    footer form {
+        position: relative;
+    }
+    
+    footer div.col-md-6 input.btn-default {
+        float:left;
+        position:absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+} 
