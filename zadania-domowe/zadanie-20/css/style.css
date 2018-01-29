@@ -94,7 +94,7 @@ section h2.text-center .green-text, footer .green-text {
 
 #about .container-fluid figure img {
     height: 25em;
-    
+    max-width: inherit; 
 }
 
 /*Sekcja O mnie-stop*/
