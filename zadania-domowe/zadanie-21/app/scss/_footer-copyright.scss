@@ -1,0 +1,91 @@
+#contact {
+    text-align: center;
+    background-image: url(../../grafiki/img/footer/world-map.jpg);
+
+    .black-mask {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
+
+
+        h1 {
+            @include h1-section-styles;
+            color: $w-color;
+            padding-top: 150px;
+        }
+
+        p.paragraph {
+            @include p-section-styles;
+            color: $w-color;
+            font-style: oblique;
+        }
+
+        form {
+            padding: 0px 100px 100px 100px;
+
+            .column {
+                display: inline-block;
+
+                input,
+                textarea {
+                    @include border-radius(2%);
+                    border: hidden;
+                    width: 95%;
+                    margin-bottom: 2%;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: $lg-color;
+                    padding: 2%;
+                    font-family: $Monserrat;
+
+                }
+
+            }
+
+            input[type="submit"] {
+                @include button-style;
+                text-decoration: none;
+                color: $w-color;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                &:hover {
+                    color: $b-color;
+                }
+            }
+        }
+    }
+
+}
+
+.copyright {
+    font-family: $Monserrat;
+
+    div.copyright-element {
+        display: inline-block;
+        text-align: center;
+
+        .copyright-paragraph {
+            color: $g-color;
+            font-size: 80%;
+            font-weight: bold;
+            transform: translateY(-150%);
+
+        }
+
+    }
+
+    .copyright-element.icons {
+        .black-element {
+            @include black-element-styles;
+            width: 2em;
+            height: 2em;
+
+            i {
+                @include icon-styles;
+                font-size: 1em;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@mixin icon-styles {
+    color: $w-color;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin black-element-styles {
+    
+                margin-top: 5%;
+                height: 3em;
+                width: 3em;
+                margin-bottom: 2%;
+                background-color: black;
+                @include border-radius(50%);
+                position: relative;
+                display: inline-block;
+
+                &:hover {
+                    background-color: $b-color;
+                }
+}
+
+
+#team {
+    padding: $paddingSections;
+    text-align: center;
+
+    h1 {
+        @include h1-section-styles;
+    }
+
+    p.paragraph {
+        @include p-section-styles;
+    }
+
+    .person {
+        display: inline-block;
+
+
+        .picture img {
+            @include border-radius(50%);
+            width: 50%;
+        }
+
+
+        .picture-caption {
+            h4 {
+                margin-top: 4%;
+                font-weight: bold;
+            }
+
+            p {
+                color: $lg-color;
+                margin-top: 2%;
+            }
+
+            .black-element {
+                
+                @include black-element-styles;
+
+                i {
+                    @include icon-styles;
+                }
+            }
+        }
+    }
+
+    p:not(.paragraph) {
+        margin-top: 5%;
+        color: $lg-color;
+
+    }
+}

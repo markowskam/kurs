@@ -1,0 +1,114 @@
+@mixin picture-styles {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+#portfolio {
+    padding: $paddingSections;
+    text-align: center;
+    background-color: #f7f7f7;
+
+    h1 {
+        @include h1-section-styles;
+    }
+
+    p.paragraph {
+        @include p-section-styles;
+    }
+
+    .picture-container {
+        display: inline-block;
+        margin-right: 2%;
+        margin-bottom: 3%;
+
+        .mask {
+            overflow: hidden;
+            position: relative;
+
+            &:hover .chestnut,
+            &:hover .laptop,
+            &:hover .child,
+            &:hover .paint,
+            &:hover .doors,
+            &:hover .cookies {
+                transform: scale(1.5);
+            }
+
+            .color-mask {
+                height: 100%;
+                width: 100%;
+                background-color: rgba(14, 216, 214, 0);
+                top: 0px;
+                transition: background-color 1s ease;
+
+                &:hover {
+                    background-color: rgba(14, 216, 214, 0.5);
+                }
+
+                &:hover i {
+                    display: inline;
+                }
+
+                i {
+                    display: none;
+                    color: white;
+                    font-size: 200%;
+                    transition: all 1s ease;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+        }
+
+        .portfolio-caption {
+            background-color: $w-color;
+
+            h3 {
+                font-weight: bold;
+                text-transform: capitalize;
+                padding-top: 3%;
+            }
+
+            p {
+                @include p-section-styles;
+            }
+        }
+    }
+
+    .mask {
+
+        .chestnut {
+            @include picture-styles;
+            background-image: url(../../grafiki/img/portfolio/chestnut_on_bracket.jpg);
+        }
+
+        .laptop {
+            @include picture-styles;
+            background-image: url(../../grafiki/img/portfolio/typing_on_laptop.jpg);
+        }
+
+        .child {
+            @include picture-styles;
+            background-image: url(../../grafiki/img/portfolio/child_with_blue_paint.jpg);
+        }
+
+        .paint {
+            @include picture-styles;
+            background-image: url(../../grafiki/img/portfolio/chaotic_paint.jpg);
+        }
+
+        .doors {
+            @include picture-styles;
+            background-image: url(../../grafiki/img/portfolio/house_with_blue_doors.jpg);
+        }
+
+        .cookies {
+            @include picture-styles;
+            background-image: url(../../grafiki/img/portfolio/box_of_cookies.jpg);
+        }
+
+    }
+}

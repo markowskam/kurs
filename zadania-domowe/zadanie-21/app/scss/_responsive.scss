@@ -1,0 +1,106 @@
+@media (min-width:1200px) {
+
+    .container {
+        width: 33%;
+    }
+    ,
+
+    .picture-container {
+        width: 27%;
+    }
+    ,
+
+    .person {
+        width: 30%;
+    }
+    ,
+
+    .column {
+        width: 49%;
+    },
+    
+    .copyright-element {
+        width: 33%;
+    }
+
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+
+    .container {
+        width: 33%;
+    }
+    ,
+
+    .picture-container {
+        width: 100%
+    }
+    ,
+
+    .person {
+        width: 45%;
+    }
+    ,
+
+    .column {
+        width: 100%;
+    },
+    
+    .copyright-element {
+        width: 33%;
+    }
+}
+
+
+@media (min-width:480px) and (max-width:992px) {
+    .container {
+        width: 45%;
+    }
+    ,
+
+    .picture-container {
+        width: 100%
+    }
+    ,
+
+    .person {
+        width: 100%;
+    }
+    ,
+
+    .column {
+        width: 100%;
+    },
+    
+    .copyright-element {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width:480px) {
+    .container {
+        width: 100%;
+    }
+    ,
+
+    .picture-container {
+        width: 100%;
+    }
+    ,
+    .person {
+        width: 100%;
+    }
+    ,
+
+    .column {
+        width: 100%;
+    },
+    
+    .copyright-element {
+        width: 100%;
+    }
+    
+}

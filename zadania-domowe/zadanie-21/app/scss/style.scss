@@ -1,0 +1,20 @@
+
+@import "variables";
+@import "header";
+@import "section-services";
+@import "section-portfolio";
+@import "section-team";
+@import "footer-copyright";
+@import "responsive";
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: $Roboto;
+    color: $bk-color;
+}
+

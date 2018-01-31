@@ -1,0 +1,66 @@
+
+@mixin h1-section-styles {
+    font-size: 200%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: $g-color;
+}
+
+@mixin p-section-styles {
+    padding-bottom: 60px;
+    font-style: italic;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    color: $lg-color;
+}
+
+
+#services {
+    padding: $paddingSections;
+    text-align: center;
+
+    h1 {
+        @include h1-section-styles;
+    }
+
+    p.paragraph {
+        @include p-section-styles;
+    }
+
+    div.container {
+        display: inline-block;
+        padding: 0px 3%;
+
+        div.icon {
+            background-color: $b-color;
+            @include border-radius(50%);
+            height: 90px;
+            width: 90px;
+            margin: 0 auto;
+
+            &:hover i {
+                transform: rotate(360deg);
+            }
+
+
+            i {
+                color: white;
+                font-size: 400%;
+                line-height: 90px;
+                transition: transform 0.5s ease;
+            }
+
+        }
+
+        h4 {
+            margin-top: 4%;
+        }
+        
+        p {
+            color: $lg-color;
+            margin-top: 4%;
+            margin-bottom: 2em;
+        }
+    }
+}
