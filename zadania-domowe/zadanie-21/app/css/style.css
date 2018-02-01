@@ -14,6 +14,8 @@
     position: absolute;
     left: 1em;
     top: 1em; }
+    #main-header #main-nav .bootstrap-topic:hover {
+      color: #0ed8d6; }
   #main-header #main-nav ul {
     list-style: none;
     position: absolute;
@@ -295,36 +297,49 @@
           color: #0ed8d6; }
 
 .copyright {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  height: 3em; }
   .copyright div.copyright-element {
     display: inline-block;
-    text-align: center; }
+    position: relative;
+    height: inherit; }
     .copyright div.copyright-element .copyright-paragraph {
       color: #333333;
       font-size: 80%;
       font-weight: bold;
-      transform: translateY(-150%); }
-  .copyright .copyright-element.icons .black-element {
-    margin-top: 5%;
-    height: 3em;
-    width: 3em;
-    margin-bottom: 2%;
-    background-color: black;
-    border-radius: 50%;
-    position: relative;
-    display: inline-block;
-    width: 2em;
-    height: 2em; }
-    .copyright .copyright-element.icons .black-element:hover {
-      background-color: #0ed8d6; }
-    .copyright .copyright-element.icons .black-element i {
-      color: white;
-      font-size: 2em;
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 1em; }
+      margin: 0 auto;
+      left: 0px;
+      right: 0px;
+      text-align: center; }
+  .copyright .copyright-element.icons {
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    text-align: center; }
+    .copyright .copyright-element.icons .black-element {
+      margin-top: 5%;
+      height: 3em;
+      width: 3em;
+      margin-bottom: 2%;
+      background-color: black;
+      border-radius: 50%;
+      position: relative;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      margin: 0px; }
+      .copyright .copyright-element.icons .black-element:hover {
+        background-color: #0ed8d6; }
+      .copyright .copyright-element.icons .black-element i {
+        color: white;
+        font-size: 2em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1em; }
 
 @media (min-width: 1200px) {
   .container {

@@ -60,26 +60,42 @@
 
 .copyright {
     font-family: $Monserrat;
+    height: 3em;
 
     div.copyright-element {
         display: inline-block;
-        text-align: center;
+        position: relative;
+        height: inherit;
 
         .copyright-paragraph {
             color: $g-color;
             font-size: 80%;
             font-weight: bold;
-            transform: translateY(-150%);
+            position: absolute;
+            top: 50%;
+            margin: 0 auto;
+            left: 0px;
+            right: 0px;
+            text-align: center;
+
 
         }
 
     }
 
     .copyright-element.icons {
+        
+        margin: 0 auto;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+
         .black-element {
             @include black-element-styles;
             width: 2em;
             height: 2em;
+            margin: 0px;
+
 
             i {
                 @include icon-styles;
