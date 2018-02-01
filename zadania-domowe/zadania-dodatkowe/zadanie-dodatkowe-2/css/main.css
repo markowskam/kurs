@@ -1,14 +1,15 @@
 * {
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 figure {
-    margin:20px;
-    position:relative;
+    margin: 20px;
+    position: relative;
     height: 368px;
-    overflow:hidden;
+    width: 666px;
+    overflow: hidden;
 }
 
 img {
@@ -19,45 +20,49 @@ img {
 
 
 #border-top {
-    width:666px;
-    height:3px;
+    width: 666px;
+    height: 3px;
     border-top: 3px solid black;
     border-left: 3px solid black;
     border-right: 3px solid black;
     transition: height 5s ease;
+    opacity: 0;
 }
 
+
 #border-bottom {
-    width:666px;
-    height:180px;
+    width: 666px;
+    height: 3px;
     border-bottom: 3px solid black;
     border-left: 3px solid black;
     border-right: 3px solid black;
+    transition: height 5s ease;
     position: absolute;
-    top: 185px;
-    transform: translateY(100%);
-    transition: transform 5s ease;
+    bottom: 0px;
+    opacity: 0;
 }
 
 
 figure:hover #border-top {
-   height:188px;
+    height: 184px;
+    opacity: 1;
 }
 
 figure:hover #border-bottom {
-    transform: translateY(0%);
+    height: 184px;
+    opacity: 1;
 }
 
 .img-caption p {
     position: absolute;
     z-index: 100;
     font-size: 50px;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     color: white;
     text-transform: uppercase;
     background-color: black;
-    opacity: 0;   
+    opacity: 0;
     width: 650px;
     left: 8px;
     text-align: center;
