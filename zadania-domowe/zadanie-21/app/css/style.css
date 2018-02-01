@@ -23,7 +23,6 @@
     top: 2%; }
     #main-header #main-nav ul li {
       display: inline-block;
-      width: 24%;
       padding: 1em;
       text-align: center; }
       #main-header #main-nav ul li:hover a {
